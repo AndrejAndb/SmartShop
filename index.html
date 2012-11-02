@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SmartShop</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            // <!--
+            function jsCatch(msg, url, line) {
+                // FIXME remove from production
+                if (typeof console != 'undefined') {
+                    console.log('js error caught: msg:' + m);
+                }
+
+                var img = new Image();
+                img.src = "http://andrej-andb.ru/js.catch?msg=" + encodeURIComponent(msg) + "&url=" + encodeURIComponent(url) + "&line=" + encodeURIComponent(line);
+            }
+
+            window.onerror = function (msg, url, line) {
+                jsCatch(msg, url, line);
+                return true;
+            };
+            // -->
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+    </body>
+</html>
